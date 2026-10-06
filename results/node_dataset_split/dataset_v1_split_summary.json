@@ -1,0 +1,37 @@
+{
+  "dataset_version": "V1",
+  "total_images": 152,
+  "total_points": 963,
+  "split_unit": "plant_id",
+  "train_plants": [
+    "P02",
+    "P03",
+    "P05",
+    "P08",
+    "P09",
+    "P10",
+    "P11",
+    "P12",
+    "P13",
+    "P15",
+    "P18",
+    "P19",
+    "P20"
+  ],
+  "validation_plants": [
+    "P04",
+    "P07",
+    "P17"
+  ],
+  "test_plants": [
+    "P01",
+    "P14",
+    "P16"
+  ],
+  "train_images": 104,
+  "validation_images": 24,
+  "test_images": 24,
+  "train_points": 658,
+  "validation_points": 152,
+  "test_points": 153
+}

@@ -1,0 +1,99 @@
+# Python environments and interpreter caches
+.venv/
+.venv-*/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Notebook/editor/operating-system files
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+.idea/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+credentials*.json
+
+# Original and working image datasets (never publish raw data from this repository)
+/data/**
+!/data/
+!/data/README.md
+
+# Local clone and checkpoint for optional SAM2 experiments
+/external/sam2/
+
+# Keep the public scripts focused on data preparation, model training, and
+# evaluation. Notebook-generation and temporary/export helpers stay local.
+/scripts/**
+!/scripts/
+!/scripts/create_node_dataset_split.py
+!/scripts/prepare_node_ground_truth.py
+!/scripts/run_node_dataset_audit.py
+!/scripts/run_resnet18_node_baseline.py
+!/scripts/evaluate_resnet18_node_validation.py
+!/scripts/evaluate_resnet18_node_test.py
+!/scripts/test_hungarian_matching.py
+!/scripts/test_resnet18_fpn_v3.py
+!/scripts/test_resnet18_node_pipeline.py
+!/scripts/diagnose_node_heatmaps.py
+!/scripts/diagnose_training_step.py
+
+# Local audit notes are useful during preparation but are not portfolio content.
+/docs/repository_commit_audit.md
+
+# Trained-model weights and experiment checkpoints
+checkpoints/
+**/checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Logs and generated binary/media artifacts
+*.log
+*.npy
+*.npz
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.gif
+*.mp4
+*.avi
+*.png
+
+# Generated results: retain only the final compact summaries listed below.
+/results/**
+!/results/
+!/results/node_dataset_split/
+!/results/node_dataset_split/dataset_v1_split_summary.json
+!/results/node_dataset_split/split_qc_report.md
+!/results/node_ground_truth/
+!/results/node_ground_truth/dataset_statistics.md
+!/results/node_ground_truth/final_ground_truth_qc.md
+!/results/node_detection_resnet18_v2/
+!/results/node_detection_resnet18_v2/config.json
+!/results/node_detection_resnet18_v2/training_history.csv
+!/results/node_detection_resnet18_v2/validation_report.md
+!/results/node_detection_resnet18_v3_fpn/
+!/results/node_detection_resnet18_v3_fpn/config.json
+!/results/node_detection_resnet18_v3_fpn/training_history.csv
+!/results/node_detection_resnet18_v3_fpn/training_curves.png
+!/results/node_detection_resnet18_v3_fpn/validation_report.md
+!/results/node_detection_resnet18_v3_fpn/test_report.md
+!/results/node_detection_resnet18_v3_fpn/v2_vs_v3_report.md
+!/results/node_detection_resnet18_v3_fpn/v2_vs_v3_validation.csv
+!/results/node_detection_resnet18_v3_fpn/final_validation_test_summary.csv
+!/results/node_detection_resnet18_v3_fpn/final_model_report.md

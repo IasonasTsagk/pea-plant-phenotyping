@@ -1,0 +1,19 @@
+# Core scientific computing and image processing
+numpy>=1.26,<2
+pandas>=2.1
+scipy>=1.10
+Pillow>=10.0
+matplotlib>=3.7
+opencv-python>=4.8
+
+# Node-detection training and evaluation
+torch>=2.5
+torchvision>=0.20
+
+# Notebook and inventory utilities
+jupyter>=1.0
+nbformat>=5.9
+openpyxl>=3.1
+
+# SAM2 is intentionally not pinned here: install it separately from Meta's
+# official repository when reproducing the optional SAM2 pilot experiments.
